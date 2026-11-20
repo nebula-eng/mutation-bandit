@@ -1,0 +1,152 @@
+{
+  "budgets": [
+    5000,
+    10000,
+    20000
+  ],
+  "points": {
+    "behavioral": {
+      "10000": {
+        "json": {
+          "deep_max": 0.1667,
+          "deep_mean": 0.0417,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        },
+        "tlv": {
+          "deep_max": 0.5,
+          "deep_mean": 0.3333,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        },
+        "url": {
+          "deep_max": 0.8333,
+          "deep_mean": 0.7916,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        }
+      },
+      "20000": {
+        "json": {
+          "deep_max": 0.5,
+          "deep_mean": 0.1667,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        },
+        "tlv": {
+          "deep_max": 0.8333,
+          "deep_mean": 0.5833,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        },
+        "url": {
+          "deep_max": 1.0,
+          "deep_mean": 0.875,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        }
+      },
+      "5000": {
+        "json": {
+          "deep_max": 0.1667,
+          "deep_mean": 0.0417,
+          "detection_max": 1.0,
+          "detection_mean": 0.875
+        },
+        "tlv": {
+          "deep_max": 0.3333,
+          "deep_mean": 0.125,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        },
+        "url": {
+          "deep_max": 0.8333,
+          "deep_mean": 0.5833,
+          "detection_max": 1.0,
+          "detection_mean": 1.0
+        }
+      }
+    },
+    "coverage": {
+      "10000": {
+        "json": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 0.1667,
+          "detection_mean": 0.0417
+        },
+        "tlv": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.7916
+        },
+        "url": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.75
+        }
+      },
+      "20000": {
+        "json": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 0.3333,
+          "detection_mean": 0.1666
+        },
+        "tlv": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.9167
+        },
+        "url": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.75
+        }
+      },
+      "5000": {
+        "json": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 0.0,
+          "detection_mean": 0.0
+        },
+        "tlv": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.5833
+        },
+        "url": {
+          "deep_max": 0.0,
+          "deep_mean": 0.0,
+          "detection_max": 1.0,
+          "detection_mean": 0.7083
+        }
+      }
+    }
+  },
+  "policies": [
+    "uniform",
+    "afl_fixed",
+    "repair_ctl",
+    "ctx_ucb"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "targets": [
+    "json",
+    "tlv",
+    "url"
+  ]
+}
